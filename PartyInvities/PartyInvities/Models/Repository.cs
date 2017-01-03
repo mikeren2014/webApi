@@ -7,24 +7,36 @@ namespace PartyInvities.Models
 {
     public class Repository
     {
-        public static Dictionary<string, GuestResponse> responses;
-
-        public Repository()
+        private static Dictionary<string, GuestResponse> _responses;
+        public static Dictionary<string, GuestResponse> responses
         {
-            responses = new Dictionary<string, GuestResponse>();
-            responses.Add("Bob", new GuestResponse
+            get
+            {
+                if (_responses == null)
+                {
+                    Initialize();
+                }
+                return _responses;
+            }
+        }
+
+
+        public static void Initialize()
+        {
+            _responses = new Dictionary<string, GuestResponse>();
+            _responses.Add("Bob", new GuestResponse
             {
                 Name = "Bob",
                 Email = "bob@example.com",
                 WillAttend = true
             });
-            responses.Add("Alice", new GuestResponse
+            _responses.Add("Alice", new GuestResponse
             {
                 Name = "Alice",
                 Email = "alice@example.com",
                 WillAttend = true
             });
-            responses.Add("Paul", new GuestResponse
+            _responses.Add("Paul", new GuestResponse
             {
                 Name = "Paul",
                 Email = "paul@example.com",
@@ -43,9 +55,13 @@ namespace PartyInvities.Models
                 responses.Add(key, newResponse);
             }
         }
+
         public static IEnumerable<GuestResponse> Responses
         {
-            get { return responses.Values; }
+            get
+            {
+                return responses.Values;
+            }
         }
     }
 }

@@ -9,8 +9,6 @@ namespace PartyInvities.Controllers
 {
     public class HomeController : Controller
     {
-        Repository res = new Repository();
-
         // GET: Home
         public ActionResult Index()
         {

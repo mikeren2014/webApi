@@ -150,6 +150,8 @@
     <Content Include="scripts\jquery-2.1.0.min.js" />
     <Content Include="scripts\knockout-3.1.0.debug.js" />
     <Content Include="scripts\knockout-3.1.0.js" />
+    <None Include="scripts\_references.js" />
+    <Content Include="scripts\rsvp.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
