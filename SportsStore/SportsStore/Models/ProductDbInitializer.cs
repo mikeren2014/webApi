@@ -6,7 +6,7 @@ using System.Web;
 
 namespace SportsStore.Models
 {
-    public class ProductDbInitializer : DropCreateDatabaseIfModelChanges<ProductDbContext>
+    public class ProductDbInitializer : DropCreateDatabaseAlways<ProductDbContext>
     {
         protected override void Seed(ProductDbContext context)
         {
