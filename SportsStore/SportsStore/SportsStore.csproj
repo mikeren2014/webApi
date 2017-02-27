@@ -198,6 +198,16 @@
     <Content Include="scripts\jquery-2.1.0.min.js" />
     <Content Include="scripts\knockout-3.1.0.debug.js" />
     <Content Include="scripts\knockout-3.1.0.js" />
+    <None Include="scripts\_references.js" />
+    <Content Include="scripts\storeAdminController.js" />
+    <Content Include="scripts\storeAdminModel.js" />
+    <Content Include="scripts\storeAjax.js" />
+    <Content Include="scripts\storeCommonController.js" />
+    <Content Include="scripts\storeCustomerController.js" />
+    <Content Include="scripts\storeCustomerModel.js" />
+    <Content Include="scripts\storeModel.js" />
+    <Content Include="scripts\storeOrdersController.js" />
+    <Content Include="scripts\storeProductsController.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -206,7 +216,9 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\async.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\PrepController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
@@ -241,6 +253,16 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Prep\Index.cshtml" />
     <Content Include="Views\Prep\Orders.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\ThankYou.cshtml" />
+    <Content Include="Views\Home\CartWidget.cshtml" />
+    <Content Include="Views\Home\Checkout.cshtml" />
+    <Content Include="Views\Home\ProductCart.cshtml" />
+    <Content Include="Views\Home\ProductList.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\AdminProductList.cshtml" />
+    <Content Include="Views\Admin\AdminOrderList.cshtml" />
+    <Content Include="Views\Admin\AdminProductAdd.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
